@@ -5,7 +5,7 @@ stages {
         stage('Download-Code-GIT') {
             steps {
                 echo "Download code from git"
-                git branch: 'main', url: 'https://github.com/devopstechlab/maven-jenkins7.git'
+                git branch: 'main', url: 'https://github.com/nil7405/maven-jenkins7.git'
             }
         }
         stage('Build') {
