@@ -10,10 +10,10 @@ stages {
         }
         stage('Build') {
             steps {
-        sh '''docker build -t devopstechlab/tomcat:v${BUILD_NUMBER} .
-            docker tag devopstechlab/tomcat:v${BUILD_NUMBER} devopstechlab/tomcat:latest 
-            docker push devopstechlab/tomcat:v${BUILD_NUMBER}
-            docker push devopstechlab/tomcat:latest '''
+        sh '''docker build -t nil7405/tomcat:v${BUILD_NUMBER} .
+            docker tag nil7405/tomcat:v${BUILD_NUMBER} nil7405/tomcat:latest 
+            docker push nil7405/tomcat:v${BUILD_NUMBER}
+            docker push nil7405/tomcat:latest '''
             }
         }
     }
