@@ -1,6 +1,6 @@
 pipeline {
     agent any
-}
+
 stages {
         stage('Download-Code-GIT') {
             steps {
@@ -17,3 +17,4 @@ stages {
             }
         }
     }
+}
